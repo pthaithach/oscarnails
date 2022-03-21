@@ -30,18 +30,31 @@
 
 </head>
 <body data-spy="scroll" data-target="#navbar">
-	<div id="side-nav" class="sidenav">
-	<a href="javascript:void(0)" id="side-nav-close">&times;</a>
-	
-	<div class="sidenav-content">
-		<p>
-			817 W Shawnee St, Muskogee, OK 74401
-		</p>
-		<p>
-			<span class="fs-16 primary-color">(+1) 918 910 5402</span>
-		</p>
-		<p>lily.oscarnails@gmail.com</p>
-	</div>
+	<div id="mySidenav" class="sidenav">
+            <a  id="side-nav-close" onclick="closeNav()">&times;</a>
+            
+            <div class="sidenav-content">
+
+                <a class="navbar-brand align-items-center" href="index.html" style="padding-left: 0px;padding-right: 70px;">
+                    <img src="img/logo-white.png" alt="oscar nails" style="width: 150px;">
+                </a>
+
+                <h5>Address</h5>
+
+                <p>
+                    817 W Shawnee St, Muskogee, OK 74401
+                </p>
+                <h5>Tel</h5>
+                <p>
+                    (+1) 918 910 5402
+                </p>
+                <h5>Mail</h5>
+                <p>gialam1311@yahoo.com</p>
+                <h5>Hours</h5>
+                <p>Mon - Sat: 10am - 7:30pm <br> Sun: 12:00am - 6:00pm</p>
+
+       </div>
+    </div>  
 </div>	<div id="side-search" class="sidenav">
 	<a href="javascript:void(0)" id="side-search-close">&times;</a>
 	<div class="sidenav-content">
@@ -75,7 +88,7 @@
             <ul class="navbar-nav d-flex justify-content-between">
                 <li class="nav-item only-desktop">
                     <a class="nav-link" id="side-nav-open" href="#">
-                        <span class="lnr lnr-menu"></span>
+                        <span class="lnr lnr-menu" onclick="openNav()"></span>
                     </a>
                 </li>
                 <div class="d-flex flex-lg-row flex-column">
@@ -190,18 +203,19 @@
          	</div>
 
          	<div class="col-lg-4">
-         		<div class="footer-widget pl-lg-5 pl-0">
-         			<h4>Get Gift Card</h4>
-	         		<p>Get the fastest offer</p>
-	         		<form id="newsletter">
-						<div class="form-group">
-							<input type="email" class="form-control" id="emailNewsletter" aria-describedby="emailNewsletter" placeholder="Enter email">
-						</div>
-						<button type="submit" class="btn btn-primary w-100">Submit</button>
-					</form>
-         		</div>
-         		
-         	</div>
+                <div class="footer-widget pl-lg-5 pl-0">
+                    <h4>Contact Us</h4>
+             
+                    <h5>Address</h5>
+                        <p> 817 W Shawnee St, Muskogee, OK 74401 </p>
+                    <h5>Tel</h5>
+                        <p>(+1) 918 910 5402</p>
+                    <h5>Mail</h5>
+                        <p>gialam1311@yahoo.com</p>
+                    <h5>Hours</h5>
+                        <p>Mon - Sat: 10am - 7:30pm <br> Sun: 12:00am - 6:00pm</p>
+                </div>      
+            </div>
          	<div class="col-md-12 d-flex align-items-center">
          		<p class="mx-auto text-center mb-0">Copyright 2022. All Right Reserved. Dev by <a href="https://www.lldtek.com" target="_blank">LLDTEK</a></p>
          	</div>
@@ -224,5 +238,14 @@
 
 	<!-- Main JS -->
 	<script src="js/app.min.js "></script>
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
 </body>
 </html>
