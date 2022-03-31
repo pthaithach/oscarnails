@@ -594,3 +594,8 @@ a:hover {
     background: #FF8C00;
     color: white;
 }
+
+.left-column-day{
+  width: 90px;
+  display: inline-block;
+}
